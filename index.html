@@ -33,25 +33,22 @@
             background-color: #FCFFE7; /* same color navigation background */
             color: #2B3467; /* White text */
         }
-        .founder {
-            width:80%,
-            background-color: #FCFFE7; 
-            color: #2B3467; /* White text */
-        }
         .founders {
-            width:50%,
-            display: flex;
-            justify-content: space-between;
-        }
-        .founder {
-            flex: 1;
-            margin: 0 10px;
-            text-align: center;
-        }
-        .founder img {
-            width: 80%; /* Set width */
-            height: auto; /* Adjust height automatically */
-        }
+    max-width: 100%; /* Set maximum width */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow the items to wrap as needed */
+}
+.founder {
+    flex: 1 0 21%; /* Grow and shrink as needed, but don't grow beyond 21% of the container */
+    margin: 0 10px;
+    text-align: center;
+}
+.founder img {
+    width: 100%; /* Set width */
+    height: auto; /* Adjust height automatically */
+}
+     
                </style>
 
 </head>
