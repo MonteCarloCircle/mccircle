@@ -11,43 +11,61 @@
     <meta name="KeyWords" content="Conference">
     <title>Conference Template</title>
        <style>
-           body {
-            background-color: #FCFFE7; /* Light grey background */
-            color: #333; /* Dark grey text */
-            overflow-x: hidden; /* Prevent horizontal scrolling */
-        }
-           .current{
-                
-                background-color: #FCFFE7 ;
-                color: #EB455F;
-           }
-           .banner {
-            background-color: #BAD7E9; /* Blue banner background */
-            color: #fff; /* White text */
-        }
-           .navigation {
-            background-color: #FCFFE7; /* same color navigation background */
-            color: #2B3467; /* White text */
-        }
-           .founders {
-    width: 70%; /* Set maximum width */
-    display: flex;
-    justify-content: space-around; /* Distribute items evenly */
-    flex-wrap: wrap; /* Allow the items to wrap as needed */
-        }
-           .founder {
-    width: 33%;
-    margin: 0 10px;
-    text-align: center;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
-           .founder img {
-    max-width: 100%; /* Set maximum width */
-    height: auto; /* Adjust height automatically */
-}
+    body {
+        background-color: #FCFFE7; /* Light grey background */
+        color: #333; /* Dark grey text */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
 
-     
-               </style>
+    .current {
+        background-color: #FCFFE7;
+        color: #EB455F;
+    }
+
+    .banner {
+        background-color: #BAD7E9; /* Blue banner background */
+        color: #fff; /* White text */
+    }
+
+    .navigation {
+        background-color: #FCFFE7; /* same color navigation background */
+        color: #2B3467; /* White text */
+    }
+
+    .founders {
+        width: 100%; /* Set width to 100% */
+        display: flex;
+        justify-content: space-around; /* Distribute items evenly */
+        flex-wrap: wrap; /* Allow the items to wrap as needed */
+    }
+
+    .founder {
+        width: 30%; /* Adjust width to accommodate three founders */
+        margin: 0 10px;
+        text-align: center;
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+    }
+
+    .founder img {
+        max-width: 100%; /* Set maximum width */
+        height: auto; /* Adjust height automatically */
+    }
+
+    /* Adjustments for smaller screens */
+    @media only screen and (max-width: 768px) {
+        .founder {
+            width: 45%; /* Adjust width for smaller screens */
+        }
+    }
+
+    /* Adjustments for even smaller screens */
+    @media only screen and (max-width: 480px) {
+        .founder {
+            width: 100%; /* Adjust width for even smaller screens */
+        }
+    }
+</style>
+
 
 </head>
 
