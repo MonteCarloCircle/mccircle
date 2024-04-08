@@ -11,10 +11,6 @@
     <meta name="KeyWords" content="Conference">
     <title>Conference Template</title>
        <style>
-           @page {
-    size: 7in 9.25in;
-    margin: 27mm 16mm 27mm 16mm;
-}
            body {
             background-color: #FCFFE7; /* Light grey background */
             color: #333; /* Dark grey text */
@@ -25,29 +21,31 @@
                 background-color: #FCFFE7 ;
                 color: #EB455F;
            }
-        .banner {
+           .banner {
             background-color: #BAD7E9; /* Blue banner background */
             color: #fff; /* White text */
         }
-        .navigation {
+           .navigation {
             background-color: #FCFFE7; /* same color navigation background */
             color: #2B3467; /* White text */
         }
-        .founders {
+           .founders {
     max-width: 100%; /* Set maximum width */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* Distribute items evenly */
     flex-wrap: wrap; /* Allow the items to wrap as needed */
-}
-.founder {
+        }
+           .founder {
     flex: 1 0 21%; /* Grow and shrink as needed, but don't grow beyond 21% of the container */
     margin: 0 10px;
     text-align: center;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
-.founder img {
-    width: 100%; /* Set width */
+           .founder img {
+    max-width: 100%; /* Set maximum width */
     height: auto; /* Adjust height automatically */
 }
+
      
                </style>
 
