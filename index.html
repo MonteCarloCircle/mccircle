@@ -10,7 +10,7 @@
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
     <title>Conference Template</title>
-       <style>
+     <style>
     body {
         background-color: #FCFFE7; /* Light grey background */
         color: #333; /* Dark grey text */
@@ -33,15 +33,15 @@
     }
 
     .founders {
-        width: 100%; /* Set width to 100% */
+        max-width: 100%; /* Set maximum width to avoid overflow */
         display: flex;
-        justify-content: space-around; /* Distribute items evenly */
         flex-wrap: wrap; /* Allow the items to wrap as needed */
+        justify-content: center; /* Center align the items */
     }
 
     .founder {
-        width: 30%; /* Adjust width to accommodate three founders */
-        margin: 0 10px;
+        width: 300px; /* Set a fixed width for founder box */
+        margin: 20px; /* Add margin to create space between founder boxes */
         text-align: center;
         box-sizing: border-box; /* Include padding and border in element's total width and height */
     }
