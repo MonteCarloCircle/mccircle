@@ -9,6 +9,31 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="MCCircle">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid black; /* Set the border color */
+        }
+        th, td {
+            border: 1px solid black; /* Set the cell borders */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ff9800; /* Header background color */
+            color: #fff; /* Header text color */
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Zebra stripes effect */
+        }
+        tr:hover {
+            background-color: coral; /* Highlight rows on hover */
+        }
+    </style>
+</head>
     <title>MCCircle</title>
      <style>
     body {
@@ -100,16 +125,33 @@
         Qua spieghiamo come funziona cioe su zoom e tutto  
     </p>
     <p>
-     <table>
-    <tr>
-        <td>Column1 in Row1</td>
-        <td>Column2 in Row1</td>
-    </tr>
-    <tr>
-        <td>Column1 in Row2</td>
-        <td>Column2 in Row2</td>
-    </tr>
-</table>
+    <table>
+        <thead>
+            <tr>
+                <th>Topic</th>
+                <th>Speaker</th>
+                <th>Date</th>
+                <th>Zoom link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Your topic 1</td>
+                <td>John Doe</td>
+                <td>2024-05-27</td>
+                <td><a href="https://example.com/zoom-link">Join Zoom</a></td>
+            </tr>
+            <tr>
+                <td>Your topic 2</td>
+                <td>Jane Smith</td>
+                <td>2024-05-28</td>
+                <td><a href="https://example.com/zoom-link">Join Zoom</a></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+
     </p>
 
 
